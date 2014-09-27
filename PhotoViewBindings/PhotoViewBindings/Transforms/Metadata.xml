@@ -6,4 +6,8 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+  <attr path="/api/package[@name='uk.co.senab.photoview']/interface[@name='IPhotoView']" name="managedName">IPhotoViewInterface</attr>
+  <!--<remove-node path="/api/package[@name='uk.co.senab.photoview']/interface[@name='IPhotoView']/method[@name='getScaleType' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='uk.co.senab.photoview']/interface[@name='IPhotoView']/method[@name='setScaleType' and count(parameter)=1 and parameter[1][@type='android.widget.ImageView.ScaleType']]"/>-->
+  <!--<attr path="/api/package[@name='uk.co.senab.photoview']/interface[@name='IPhotoView']/method[@name='getScaleType' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>-->
 </metadata>
